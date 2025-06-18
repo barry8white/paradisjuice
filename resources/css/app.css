@@ -1,0 +1,47 @@
+@font-face{
+    font-family: "MyFont";
+    src: url('./RaleighSerial-Medium.ttf');
+    unicode-range: U+0020-007F;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "MyFont";
+    
+}
+
+a{
+text-decoration: none;
+color: inherit;
+outline: 0px;
+}
+
+a:hover{
+text-decoration: none;
+color: inherit;
+}
+
+a:focus{
+text-decoration: none;
+color: inherit;
+}
+
+a:visited{
+text-decoration: none;
+color: inherit;
+}
+
+a:active{
+text-decoration: none;
+color: inherit;
+}
+
+/* global style */
+
+.content-centered {
+display: flex;
+justify-content: center; /* Centers horizontally */
+align-items: center; /* Centers vertically */
+}
+  
