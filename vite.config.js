@@ -8,6 +8,7 @@ import vuetify from 'vite-plugin-vuetify'
 
 
 export default defineConfig({
+    base: '/',
     plugins: [
         laravel({
             input: 'resources/js/app.js',
