@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://paradisjuice.infy.uk'),
+    'url' => env('APP_URL', 'https://paradisjuice-production.up.railway.app'),
+    'asset_url' => env('ASSET_URL', null),
 
     /*
     |--------------------------------------------------------------------------
