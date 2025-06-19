@@ -9,6 +9,11 @@ import vuetify from 'vite-plugin-vuetify'
 
 export default defineConfig({
     base: '/',
+    server: {
+    hmr: {
+      host: 'paradisjuice-production.up.railway.app',
+        },
+    },
     plugins: [
         laravel({
             input: 'resources/js/app.js',
