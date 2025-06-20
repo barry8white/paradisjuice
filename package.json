@@ -3,6 +3,7 @@
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
+    "postinstall": "npm run build",
     "dev": "vite"
   },
   "dependencies": {
