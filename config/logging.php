@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'default' => env('LOG_CHANNEL', 'stack'),
+    'default' => env('LOG_CHANNEL', 'stderr'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,10 +52,13 @@ return [
 
     'channels' => [
 
-        'stack' => [
-            'driver' => 'stack',
-            'channels' => explode(',', env('LOG_STACK', 'single')),
-            'ignore_exceptions' => false,
+        'stderr' => [
+            'driver' => 'monolog',
+            'handler' => StreamHandler::class,
+            'with' => [
+                'stream' => 'php://stderr',
+            ],
+            'level' => env('LOG_LEVEL', 'debug'),
         ],
 
         'single' => [
